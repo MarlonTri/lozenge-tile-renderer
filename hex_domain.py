@@ -49,7 +49,7 @@ class HexDomain:
     def can_add(self, pos):
         """Returns True iff there is a hexagon of three lozenges centered at POS."""
         arr = np.indices(self.gridpoints.shape)[1:self.size-1, 1:self.size-1]
-        rot1 = self.gridpoints[arr[0]-1, arr[1]-1, 1] == 
+        rot1 = self.gridpoints[arr[0]-1, arr[1]-1, 1] ==
 
 
     def sample(self, iters=10, q=1):
